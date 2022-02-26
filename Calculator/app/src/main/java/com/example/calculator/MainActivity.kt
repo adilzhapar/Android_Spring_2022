@@ -66,7 +66,6 @@ class MainActivity : AppCompatActivity() {
             val str = math_operation.text.toString()
             if(str.isNotEmpty())
                 math_operation.text = str.substring(0, str.length-1)
-            result.text = ""
         }
     }
 

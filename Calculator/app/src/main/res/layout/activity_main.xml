@@ -8,14 +8,14 @@
         android:background="@android:color/white"
         android:orientation="vertical"
         tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:textColor="@android:color/darker_gray"
         android:text="RAD"
         android:textStyle="bold"
-        android:paddingLeft="10dp"
-        />
+        android:paddingLeft="10dp" />
 
     <TextView
         android:id="@+id/math_operation"
@@ -24,7 +24,7 @@
         android:textColor="@android:color/black"
         android:gravity="end"
         android:ellipsize="start"
-        android:textSize="40dp"
+        android:textSize="45dp"
         android:singleLine="true"
         />
     <TextView
@@ -34,7 +34,7 @@
         android:textColor="@android:color/black"
         android:gravity="end"
         android:ellipsize="start"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:singleLine="true"
         />
     <LinearLayout
@@ -145,6 +145,7 @@
                 style="@style/ActionButton"
                 android:id="@+id/btn_back"
                 android:text="\u232b"/>
+
             <TextView
                 style="@style/ActionButton"
                 android:id="@+id/btn_div"
