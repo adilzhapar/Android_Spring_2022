@@ -11,8 +11,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:paddingLeft="10dp"
-        android:text="RAD"
+        android:paddingStart="10dp"
+        android:text="@string/rad"
         android:textColor="@android:color/darker_gray"
         android:textStyle="bold" />
 
@@ -24,7 +24,7 @@
         android:gravity="end"
         android:singleLine="true"
         android:textColor="@android:color/black"
-        android:textSize="45dp" />
+        android:textSize="45sp" />
 
     <TextView
         android:id="@+id/result"
@@ -45,12 +45,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            tools:ignore="NestedWeights">
+            android:layout_weight="1">
 
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 tools:ignore="NestedWeights">
 
                 <Button
@@ -115,6 +114,7 @@
                     android:id="@id/btn_comma"
                     style="@style/Button"
                     android:layout_below="@id/btn_1"
+                    android:layout_alignParentBottom="true"
                     android:text="," />
 
                 <Button
@@ -122,6 +122,7 @@
                     style="@style/Button"
                     android:layout_below="@id/btn_2"
                     android:layout_toEndOf="@id/btn_comma"
+                    android:layout_alignParentBottom="true"
                     android:text="0" />
 
                 <Button
@@ -129,6 +130,7 @@
                     style="@style/Button"
                     android:layout_below="@id/btn_3"
                     android:layout_toEndOf="@id/btn_0"
+                    android:layout_alignParentBottom="true"
                     android:text="=" />
 
             </RelativeLayout>
