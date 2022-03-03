@@ -38,13 +38,13 @@ class MainActivity : AppCompatActivity() {
             try {
 
                 val ex = ExpressionBuilder(binding.mathOperation.text.toString()).build()
-                val result = ex.evaluate()
+                val res = ex.evaluate()
 
-                val longRes = result.toLong()
-                if(result == longRes.toDouble()){
+                val longRes = res.toLong()
+                if(res == longRes.toDouble()){
                     binding.result.text = longRes.toString()
                 }else{
-                    binding.result.text = binding.result.toString()
+                    binding.result.text = res.toString()
                 }
             } catch (e:Exception) {
                 Log.d("Error", "message: ${e.message}")
