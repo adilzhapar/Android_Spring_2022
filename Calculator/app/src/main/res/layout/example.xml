@@ -145,7 +145,7 @@
             <TextView
                 android:id="@+id/btn_back"
                 style="@style/ActionButton"
-                android:text="\u232b" />
+                android:text="@string/u232b" />
 
             <TextView
                 android:id="@+id/btn_div"
