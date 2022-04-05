@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/drawable/ic_launcher_background.xml" value="0.182" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/layout/activity_item.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/layout/dialog_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/layout/rv_child_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/layout/rv_child_item.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/ToDoList/app/src/main/res/menu/dashboard_child.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

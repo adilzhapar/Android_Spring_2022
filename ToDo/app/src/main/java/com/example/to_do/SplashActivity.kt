@@ -1,15 +1,20 @@
-//package com.example.to_do
+package com.example.to_do
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.to_do.R
+import android.content.Intent
+import android.os.Handler
 
 class SplashActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    fun OnCreate(savedInstanceState: Bundle?) {
+        super.onCreate(SavedInstanceState)
         setContentView(R.layout.activity_splash)
-        supportActionBar?.hide()
-
-        var i = Intent()
+        supportActionBar!!.hide()
+        val i = Intent(this@SplashActivity, MainActivity::class.java)
+        Handler().postDelayed({
+            startActivity(i)
+            finish()
+        }, 1000)
     }
 }
