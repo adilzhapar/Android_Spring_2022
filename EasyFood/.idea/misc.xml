@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/activity_categories.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/activity_meal_detailes.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/category_bottom_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/fav_meal_card.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/fragment_category.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/meal_card.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/most_popular_card.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/layout/single_meal_card.xml" value="0.25" />
+        <entry key="..\:/Users/adilz/Documents/Android_projects/EasyFood/app/src/main/res/menu/bottom_nevigation.xml" value="0.25" />
         <entry key="..\:/Users/adilz/Documents/EasyFood-master/app/src/main/res/layout/activity_categories.xml" value="0.25" />
         <entry key="..\:/Users/adilz/Documents/EasyFood-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/adilz/Documents/EasyFood-master/app/src/main/res/layout/activity_meal_detailes.xml" value="0.25" />
