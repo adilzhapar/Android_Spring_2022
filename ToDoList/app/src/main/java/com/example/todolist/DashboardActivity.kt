@@ -5,6 +5,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 import android.view.LayoutInflater
 import android.view.View
@@ -16,12 +17,17 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lab51.api.ApiClient
 import com.example.todolist.databinding.ActivityDashboardBinding
 import com.example.todolist.DTO.ToDo
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class DashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDashboardBinding
     private lateinit var dbHandler: DBHandler
+    private var apiService = ApiClient.getApiService()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +57,8 @@ class DashboardActivity : AppCompatActivity() {
             dialog.show()
         }
 
+        getTodos(1)
+
 
     }
 
@@ -71,6 +79,21 @@ class DashboardActivity : AppCompatActivity() {
 
         }
         dialog.show()
+    }
+
+    private fun getTodos(id: Int): List<ToDo> {
+        var result: List<ToDo> = emptyList()
+
+        apiService.getTodosByUserId(id).enqueue(object : Callback<List<ToDo>> {
+            override fun onResponse(call: Call<List<ToDo>>, response: Response<List<ToDo>>) {
+                result = if(response.isSuccessful) response.body()!! else emptyList()
+            }
+            override fun onFailure(call: Call<List<ToDo>>, t: Throwable) {
+                Log.e("ERROR", t.message.toString())
+            }
+        })
+
+        return result
     }
 
     override fun onResume() {
@@ -137,5 +160,9 @@ class DashboardActivity : AppCompatActivity() {
                 val menu: ImageView = v.findViewById(R.id.iv_menu)
             }
     }
+
+}
+
+private fun <T> Call<T>.enqueue(callback: Callback<List<ToDo>>) {
 
 }
